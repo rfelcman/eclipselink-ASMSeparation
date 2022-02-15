@@ -17,5 +17,4 @@ public class ASMFactory {
             throw new RuntimeException("Incorrect ASM service name.");
         }
     }
-
 }
