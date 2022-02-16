@@ -1,7 +1,5 @@
 package org.eclipse.persistence.asm;
 
-import java.util.ServiceLoader;
-
 public class ASMFactory {
 
     public final static String ASM_SERVICE = "eclipselink.asm.service";

@@ -19,8 +19,8 @@ public class TestPOC {
 
     @Test
     public void testClassWriter() throws Throwable {
-        System.setProperty(ASMFactory.ASM_SERVICE, ASMFactory.ASM_SERVICE_ECLIPSELINK);
-//        System.setProperty(ASMFactory.ASM_SERVICE, ASMFactory.ASM_SERVICE_OW2);
+//        System.setProperty(ASMFactory.ASM_SERVICE, ASMFactory.ASM_SERVICE_ECLIPSELINK);
+        System.setProperty(ASMFactory.ASM_SERVICE, ASMFactory.ASM_SERVICE_OW2);
 
         String className = TestEntity.class.getName();
 

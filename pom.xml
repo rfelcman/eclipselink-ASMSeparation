@@ -40,19 +40,16 @@
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm</artifactId>
             <version>${asm.version}</version>
-            <classifier>sources</classifier>
         </dependency>
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-commons</artifactId>
             <version>${asm.version}</version>
-            <classifier>sources</classifier>
         </dependency>
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-tree</artifactId>
             <version>${asm.version}</version>
-            <classifier>sources</classifier>
         </dependency>
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
