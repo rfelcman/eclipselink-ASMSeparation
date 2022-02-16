@@ -8,10 +8,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<!--
-        <maven.compiler.target>11</maven.compiler.target>
-        <maven.compiler.source>11</maven.compiler.source>
--->
 
         <eclipselink.version>4.0.0-SNAPSHOT</eclipselink.version>
         <eclipselink.asm.version>9.2.0</eclipselink.asm.version>

@@ -11,13 +11,15 @@ public class Opcodes {
 
     public static int valueInt(String fieldName) {
         return ((int)getFieldValueInvokeAPI(fieldName, Integer.TYPE));
+//        return ((int)getFieldValueReflection(fieldName));
     }
 
-    public static int valueInteger(String fieldName) {
-        return ((int)getFieldValueInvokeAPI(fieldName, Integer.class));
+    public static Integer valueInteger(String fieldName) {
+        return ((Integer)getFieldValueInvokeAPI(fieldName, Integer.class));
+//        return ((Integer)getFieldValueReflection(fieldName));
     }
 
-    //reflection
+    //reflection <= JDK 8
     private static Object getFieldValueReflection(String fieldName) {
         String asmService = System.getProperty(ASMFactory.ASM_SERVICE, ASMFactory.ASM_SERVICE_DEFAULT);
         Object result = null;
@@ -39,7 +41,7 @@ public class Opcodes {
         return result;
     }
 
-    //java.lang.invoke.VarHandle from JDK 9
+    //java.lang.invoke.VarHandle >= JDK 9
     private static Object getFieldValueInvokeAPI(String name, Class<?> type) {
         String asmService = System.getProperty(ASMFactory.ASM_SERVICE, ASMFactory.ASM_SERVICE_DEFAULT);
         Object result = null;
